@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "engines": { "node": ">=20" },
   "scripts": {
     "dev": "vite",
     "build": "vite build && esbuild server/boot.ts --platform=node --bundle --format=esm --outdir=dist --banner:js=\"import { createRequire } from 'module';const require = createRequire(import.meta.url);\"",
@@ -99,5 +98,8 @@
     "prettier": "^3.7.4",
     "vitest": "^4.0.16",
     "drizzle-kit": "^0.31.8"
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
